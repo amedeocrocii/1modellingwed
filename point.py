@@ -36,5 +36,11 @@ for i in range(5):
                         random.randint(-10, 10)))
 
 print("I got these 5 random points:")
-for p in points:
-    print(p)
+print(points)
+p = Point(3,4)
+print(p.distance_orig()) # except 5 answer
+p2 = Point(1,1)
+print(f"I am comparing p > p2: {p>p2}") # I expect to have True
+print("the sorted list of point is:")
+points.sort()
+print(points)
